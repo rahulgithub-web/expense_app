@@ -28,7 +28,7 @@ const registerController = async (req, res) => {
         let newUser = await userModel.create(userDetails);
         return res.status(201).send({ status: true, message: "User registered in successfully", data: newUser });
     } catch (error) {
-        return res.status(400).json({success: false, error});
+        return res.status(500).send({status: false, error});
     };
 };
 
@@ -41,9 +41,9 @@ const loginController = async (req, res) => {
             return res.status(404).json({success: false, message: 'User not found'});
         };
 
-        return res.status(200).json({success: true, message: 'User logged in successfully', user});
+        return res.status(200).send({success: true, message: 'User logged in successfully', user});
     } catch (error) {
-        res.status(400).json({success: false, error})
+        return res.status(400).send({success: false, error})
     };
 };
 
