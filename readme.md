@@ -47,10 +47,11 @@ The environment in which the application is running.
 ## Contributing
 ### If you want to contribute to this project, follow these steps:
 
-Fork the repository.
-Create a new branch for your changes.
-Make your changes and commit them.
-Push your changes to your forked repository.
-Create a pull request.
-License
+### Fork the repository.
+1. Create a new branch for your changes.
+2. Make your changes and commit them.
+3. Push your changes to your forked repository.
+4. Create a pull request.
+
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
